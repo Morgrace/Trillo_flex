@@ -22,6 +22,9 @@ This project is part of an online advanced CSS course designed to demonstrate pr
 ## Project Overview
 
 This project showcases a hotel booking website with various features including booking, flight, reviews, car rental, and tours. The design is intended to be both functional and aesthetically pleasing, providing a seamless user experience across different devices.
+view @ 
+
+https://trillo-app-flex.netlify.app/ 
 
 ## Features
 
