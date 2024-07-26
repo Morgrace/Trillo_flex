@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <div class="hamburger">
+        <input type="checkbox" class="hamburger__input" id="ham-check">
+        <label for="ham-check" class="hamburger__label">
+            <span>&nbsp;</span>
+        </label>
+        <label for="ham-check" class="hamburger__overlay">&nbsp;</label>
+
+        <div class="hamburger__background"></div>
+
+        <aside class="hamburger-bar">
+            <ul class="hamburger-bar__nav">
+                <li class="hamburger-bar__item hamburger-bar__item--active"><a href="" class="hamburger-bar__link">
+                        <svg class="hamburger-bar__icon">
+                            <use xlink:href="img/sprite.svg#icon-home"></use>
+                        </svg>
+                        <span>Hotel</span>
+                    </a></li>
+
+                <li class="hamburger-bar__item"><a href="" class="hamburger-bar__link">
+                        <svg class="hamburger-bar__icon">
+                            <use xlink:href="img/sprite.svg#icon-aircraft-take-off
+                                    "></use>
+                        </svg>
+                        <span>Flight</span>
+                    </a></li>
+                <li class="hamburger-bar__item"><a href="" class="hamburger-bar__link">
+                        <svg class="hamburger-bar__icon">
+                            <use xlink:href="img/sprite.svg#icon-key"></use>
+                        </svg>
+                        <span>Car Rental</span>
+                    </a></li>
+                <li class="hamburger-bar__item"><a href="" class="hamburger-bar__link">
+                        <svg class="hamburger-bar__icon">
+                            <use xlink:href="img/sprite.svg#icon-map"></use>
+                        </svg>
+                        <span>Tours</span>
+                    </a></li>
+            </ul>
+
+    </div>
+
+
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="trillo logo" class="logo">
+
+            <form action="#" class="search">
+                <input list="services" type="text" class="search__input" placeholder="Search hotels">
+                <datalist id="services">
+                    <option value="Booking">
+                    <option value="Flights">
+                    <option value="Reviews">
+                    <option value="Car Rental">
+                    <option value="Tours">
+                </datalist>
+
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification-num">7</span>
+                </div>
+
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="user-nav__notification-num">13</span>
+                </div>
+
+                <div class="user-nav__icon-box">
+                    <img src="img/user__photo.jpg" alt="user" class="user-nav__photo">
+                    <span class="user-nav__user-name">Morgrace</span>
+                </div>
+            </nav>
+        </header>
+        <main class="content">
+            <aside class="side-bar">
+                <ul class="side-bar__nav">
+                    <li class="side-bar__item side-bar__item--active"><a href="" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a></li>
+
+                    <li class="side-bar__item"><a href="" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off
+                                "></use>
+                            </svg>
+                            <span>Flight</span>
+                        </a></li>
+                    <li class="side-bar__item"><a href="" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Car Rental</span>
+                        </a></li>
+                    <li class="side-bar__item"><a href="" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Tours</span>
+                        </a></li>
+                </ul>
+                <div class="copyright">
+                    <p class="copyright__text">
+                        &copy; 2024 by Morgrace Precious. All rights reserved.
+
+                        This website design is based on the original work by Jonas Schmedtmann and is used with
+                        permission. All credit for the design goes to Jonas Schmedtmann. The coding and implementation
+                        were done by Morgrace Precious.
+                    </p>
+                </div>
+            </aside>
+            <div class="hotel-view">
+                <div class="gallery">
+                    <div class="gallery__slide">
+                        <img src="img/hotel-1.jpg" alt="photo of hotel-1" class="gallery__photo">
+                    </div>
+
+                    <div class="gallery__slide">
+                        <img src="img/hotel-2.jpg" alt="photo of hotel-2" class="gallery__photo">
+                    </div>
+
+                    <div class="gallery__slide">
+                        <img src="img/hotel-3.jpg" alt="photo of hotel-3" class="gallery__photo">
+                    </div>
+                </div>
+
+                <div class="hotel__overview">
+                    <h1 class="hotel__heading">
+                        Bay Rock hotel
+                    </h1>
+                    <div class="hotel__rating">
+                        <svg class="hotel__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+
+                        <svg class="hotel__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+
+                        <svg class="hotel__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+
+                        <svg class="hotel__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+
+                        <svg class="hotel__icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+
+                    <div class="hotel__location">
+                        <svg class="hotel__icon">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="btn--link">Victoria Island, Lagos</button>
+                    </div>
+
+                    <div class="hotel__rating-score">
+                        <span>8.6</span>
+                        <span>429 votes</span>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="details">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis
+                            ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                            architecto voluptate.
+                        </p>
+
+                        <p class="paragraph">
+                            Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus,
+                            inventore iure aliquid aliquam.
+                        </p>
+
+                        <ul class="list">
+                            <li class="list__item">close to the beach</li>
+                            <li class="list__item">Free airport shuttle</li>
+                            <li class="list__item">Air conditioning and heating </li>
+                            <li class="list__item">We speak all languages</li>
+                            <li class="list__item">Breakfast included</li>
+                            <li class="list__item">Free wifi in all rooms</li>
+                            <li class="list__item">Pets allowed</li>
+                            <li class="list__item">Perfect for families</li>
+                        </ul>
+
+                        <div class="recommendation">
+                            <p class="recommendation__count">Precious and 3 other friends recommend this hotel</p>
+
+                            <div class="recommendation__friends">
+                                <img src="img/user-3.jpg" alt="Friend 1" class="recommendation__photo">
+
+                                <img src="img/user-4.jpg" alt="Friend 2" class="recommendation__photo">
+
+                                <img src="img/user-5.jpg" alt="Friend 3" class="recommendation__photo">
+
+                                <img src="img/user-6.jpg" alt="Friend 4" class="recommendation__photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto
+                                dicta animi, totam, itaque officia ex.
+                            </blockquote>
+
+                            <figcaption class="review__user-box">
+                                <div class="review__user">
+                                    <img src="img/user-1.jpg" alt="user photo" class="review__user-photo">
+                                </div>
+                                <div class="review__user-details">
+                                    <p class="review__user-name">Nick Smith</p>
+                                    <p class="review__date">
+                                        Jan 23rd, 2024
+                                    </p>
+                                </div>
+                                <div class="review__rating">
+                                    <p class="review__rating-count">7.8</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto
+                                dicta animi.
+                            </blockquote>
+
+
+                            <figcaption class="review__user-box">
+                                <div class="review__user">
+                                    <img src="img/user-2.jpg" alt="user photo" class="review__user-photo">
+                                </div>
+                                <div class="review__user-details">
+                                    <p class="review__user-name">May Thomas</p>
+                                    <p class="review__date">
+                                        June 2nd, 2024
+                                    </p>
+                                </div>
+                                <div class="review__rating">
+                                    <p class="review__rating-count">9.3</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn--link">show all <span>&rarr;</span></button>
+                    </div>
+                </div>
+                <div class="cta">
+                    <p class="cta__text">Good news! we have 4 free rooms for your selected dates!</p>
+                    <button class="btn">
+                        <span>Only 4 rooms left</span>
+                        <span>Book now</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

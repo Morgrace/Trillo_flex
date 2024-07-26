@@ -1,0 +1,16 @@
+.copyright {
+
+    @media only screen and (max-width: $large) {
+        display: none;
+    }
+
+    padding: 1rem;
+    margin-bottom: 3.5rem;
+
+    &__text {
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--color-Grey-light-4);
+
+    }
+}

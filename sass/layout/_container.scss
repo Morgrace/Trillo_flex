@@ -1,0 +1,15 @@
+.container {
+    max-width: 120rem;
+    min-height: 50rem;
+    margin: 8rem auto;
+    background-color: var(--color-Grey-light-1);
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3);
+
+    @media only screen and (max-width: $largest) {
+        margin: 0;
+    }
+
+    @media only screen and (max-width: $smallest-1) {
+        background-image: linear-gradient(to bottom, #fff, 15%, var(--color-Grey-light-1));
+    }
+}

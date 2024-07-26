@@ -1,0 +1,201 @@
+.hamburger {
+    display: none;
+
+    @media only screen and (max-width: $smallest-1) {
+        display: block;
+    }
+
+    &__input {
+        display: none;
+
+        &:checked~.hamburger__label span::before {
+            transform: rotate(135deg);
+            top: 0;
+
+        }
+
+        &:checked~.hamburger__label span {
+            background-color: transparent;
+        }
+
+        &:checked~.hamburger__label span::after {
+            transform: rotate(-135deg);
+            top: 0;
+        }
+
+        &:checked~.hamburger__background {
+            width: 80%;
+
+            @media only screen and (max-width: $smallest-2) {
+                width: 100vw;
+            }
+        }
+
+        &:checked~.hamburger-bar {
+            right: 20%;
+
+            @media only screen and (max-width: $smallest-2) {
+                right: 15%;
+            }
+        }
+
+        &:checked~.hamburger__overlay {
+            display: inline-block;
+        }
+    }
+
+    &__label {
+        display: inline-block;
+        text-align: center;
+        background-color: var(--color-Grey-light-1);
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: 13rem;
+        right: 1rem;
+        z-index: 1000;
+
+        span {
+            display: inline-block;
+            width: 3.5rem;
+            height: .2rem;
+            border-radius: 1000px;
+            background-color: var(--color-Grey-dark-1);
+            top: 50%;
+            position: relative;
+            transition: all .1s;
+
+            &::before,
+            &::after {
+                content: "";
+                display: inline-block;
+                border-radius: 1000px;
+                width: 3.5rem;
+                height: .2rem;
+                position: absolute;
+                background-color: var(--color-Grey-dark-1);
+                left: 0;
+                transition: all .3s;
+            }
+
+            &::before {
+                top: -1rem;
+            }
+
+            &::after {
+                top: 1rem;
+            }
+        }
+    }
+
+    &__background {
+        width: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-image: radial-gradient((var(--color-Primary-light)), var(--color-Grey-dark-1));
+        z-index: 100;
+        transition: all .8s;
+    }
+
+    &-bar {
+        position: fixed;
+        top: 35%;
+        right: -60%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        transition: right .4s .1s;
+
+        @media only screen and (max-width: $smallest-2) {
+            right: -100%;
+        }
+
+        &__nav {
+            list-style: none;
+
+
+        }
+
+        &__item {
+            position: relative;
+            z-index: 10000;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+
+
+            }
+
+            &::before {
+                content: "";
+                width: 2%;
+                height: 100%;
+                display: block;
+                background-color: #fff;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: scaleY(0);
+                transition: transform .2s,
+                    width .4s cubic-bezier(1, -0.09, .08, 1.03) .2s,
+                    background-color .1s;
+            }
+
+            &:hover::before,
+            &:first-child::before {
+                transform: scaleY(1);
+                width: 100%;
+            }
+
+            &:active::before {
+                background-color: var(--color-Primary-light);
+            }
+
+
+        }
+
+        &__link:link,
+        &__link:visited {
+            color: var(--color-Grey-dark-1);
+            font-size: 1.4rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: block;
+            padding: 1.5rem 3rem;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+
+
+        }
+
+
+
+
+
+        &__icon {
+            margin-right: 1.5rem;
+            width: 1.75rem;
+            height: 1.75rem;
+            fill: currentColor;
+
+
+        }
+
+    }
+
+    &__overlay {
+        display: none;
+        position: fixed;
+        background-color: transparent;
+        backdrop-filter: blur(1.5px);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 10;
+    }
+
+}

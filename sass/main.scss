@@ -1,0 +1,32 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+
+
+@import "components/btn";
+@import "components/cta";
+@import "components/gallery";
+@import "components/hamburger";
+@import "components/hotel";
+@import "components/logo";
+@import "components/recommendation";
+@import "components/review";
+@import "components/search-bar";
+@import "components/side-bar";
+@import "components/user_nav";
+
+@import "layout/container";
+@import "layout/content";
+@import "layout/copyright";
+@import "layout/description";
+@import "layout/details";
+@import "layout/header";
+@import "layout/hotel-view";
+@import "layout/user-reviews";
+
+@import "pages/home"

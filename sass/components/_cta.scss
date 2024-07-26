@@ -1,0 +1,16 @@
+.cta {
+    text-align: center;
+    font-size: 2rem;
+    margin: .7rem 0;
+    padding: .7rem 0;
+
+    @media only screen and (max-width: $smallest-2) {
+        margin-bottom: 5rem;
+    }
+}
+
+.cta__text {
+    font-weight: 300;
+    color: var(--color-Grey-dark-3);
+    margin-bottom: 2rem;
+}

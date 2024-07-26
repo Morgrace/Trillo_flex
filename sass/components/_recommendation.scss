@@ -1,0 +1,31 @@
+.recommendation {
+
+    display: flex;
+    align-items: center;
+
+
+
+
+    &__count {
+        font-size: 1.3rem;
+        color: var(--color-Grey-dark-3);
+    }
+
+    &__friends {
+        margin-left: auto;
+
+        @media only screen and (max-width: $smaller-1) {
+            display: flex;
+
+        }
+    }
+
+    &__photo {
+        box-sizing: content-box;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        margin-right: -2rem;
+    }
+}
