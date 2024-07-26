@@ -287,7 +287,21 @@
             </div>
         </main>
     </div>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerInput = document.querySelector('.hamburger__input');
+            const body = document.body;
+        
+            hamburgerInput.addEventListener('change', function() {
+                if (this.checked) {
+                    body.classList.add('no-scroll');
+                } else {
+                    body.classList.remove('no-scroll');
+                }
+            });
+        });
+        </script>
+        
 </body>
 
 </html>
